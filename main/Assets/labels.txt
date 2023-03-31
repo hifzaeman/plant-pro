@@ -1,0 +1,5 @@
+0 Clay
+1 Gravel
+2 Loamy
+3 Sand
+4 Silt

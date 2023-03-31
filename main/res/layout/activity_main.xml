@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:background="@color/green"
+        app:popupTheme="@style/Theme.MyApplication1.PopupOverlay"
+
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Soil Detection"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+
+        ></TextView>
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="212dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/soil"
+
+        ></ImageView>
+
+    <Button
+        android:id="@+id/selectbtn"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/green"
+        android:text="Select Image"></Button>
+
+    <Button
+        android:id="@+id/camerabtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="@color/green"
+        android:text="Capture Image"></Button>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/camerabtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="20dp"
+        android:text="An ideal soil for plant growth contains 50% pore space and 50% solids, with the pore space filled with equal parts air and water. This distribution rarely occurs because pore space varies with soil texture and soil management."
+        android:textAlignment="center"
+        android:textSize="25dp"
+
+        android:textStyle="bold|italic"></TextView>
+
+
+
+</RelativeLayout>
